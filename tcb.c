@@ -192,7 +192,7 @@ int main(int argc, char *argv[]) {
                     time_t current_time;
                     time(&current_time);
 
-                    char *remark = "";
+                    char *remark = "(null)";
                     char *content = malloc(MAX_JSON_LEN*sizeof(char));
 
                     sprintf(content ,"{\"createTime\":\"%s\",\"modTime\":\"%s\",\"remark\":\"%s\",\"item\":[]}", strtok(ctime(&current_time), "\n"), strtok(ctime(&current_time), "\n"), remark);

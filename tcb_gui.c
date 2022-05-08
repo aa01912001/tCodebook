@@ -141,14 +141,25 @@ static void show_user_page_options() {
                 struct json_object *root = json_tokener_parse(jsonStr);
                 free(jsonStr);
 
+
                 newUser->createTime = strdup(json_object_to_json_string(json_object_object_get(root, "createTime")));
-                if(strtok(newUser->createTime, "\"") == NULL) strcpy(newUser->createTime, "null");
+                strcpy(newUser->createTime, strtok(newUser->createTime, "\""));
+                if(strcmp(newUser->createTime, "(null)") == 0) strcpy(newUser->createTime, "null");
 
                 newUser->modTime = strdup(json_object_to_json_string(json_object_object_get(root, "modTime")));
-                if(strtok(newUser->modTime, "\"") == NULL) strcpy(newUser->modTime, "null");
+                strcpy(newUser->modTime, strtok(newUser->modTime, "\""));
+                if(strcmp(newUser->modTime, "(null)") == 0) strcpy(newUser->modTime, "null");
 
                 newUser->remark = strdup(json_object_to_json_string(json_object_object_get(root, "remark")));
-                if(strtok(newUser->remark, "\"") == NULL) strcpy(newUser->remark, "null");
+                strcpy(newUser->remark, strtok(newUser->remark, "\""));
+                if(strcmp(newUser->remark, "(null)") == 0) strcpy(newUser->remark, "null");
+                // if(strcmp(newUser->remark, "") == 0) {
+                // 	mvaddstr(0, 0, "yes");
+                // 	strcpy(newUser->remark, "null");
+                // } else {
+                	
+                // 	if(strcmp(newUser->remark, "(null)") == 0) strcpy(newUser->remark, "null");
+                // }
 
             	newUser->next = NULL;
 
