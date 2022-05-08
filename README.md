@@ -22,14 +22,27 @@ After creating, you can add an item into your codebook as follows:
 ```
 Then, enter the information of this item:
 
-![image](https://user-images.githubusercontent.com/35134755/167287751-9eaa9a1f-60af-4d89-891f-1b183112c0bf.png)
+<img src="https://user-images.githubusercontent.com/35134755/167287751-9eaa9a1f-60af-4d89-891f-1b183112c0bf.png" width="300">
 
 Now you can use the text GUI mode to display all user's information or your codebook:
 ```
 ./tcb.out -g
 ```
 
-![image](https://user-images.githubusercontent.com/35134755/167286376-6d6bed9d-ab3d-4f57-bc98-df0414a7b42b.png)
+<img src="https://user-images.githubusercontent.com/35134755/167289634-f36636cc-08e2-4695-891e-885470590b52.png" width="400">
 
-**Keywords:** C、ncurses、jso
+Display all users:
+
+<img src="https://user-images.githubusercontent.com/35134755/167289272-f147c2ec-e93b-45b3-8888-1d240af96bb6.png" width="700">
+
+Display codebook:
+
+<img src="https://user-images.githubusercontent.com/35134755/167289316-d09a5c58-d472-4ef5-ac84-abbdddc054d7.png" width="700">
+
+Other functions can be executed as follows:
+
+<img src="https://user-images.githubusercontent.com/35134755/167286376-6d6bed9d-ab3d-4f57-bc98-df0414a7b42b.png" width="800">
+
+## Keywords:
+C、ncurses、json-c
 
