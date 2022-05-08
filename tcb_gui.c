@@ -667,37 +667,37 @@ static void show_help_page_options() {
 	attroff(COLOR_PAIR(8));
 
 	attron(COLOR_PAIR(8));
-	mvaddstr(1, 4, " -a user_name");
+	mvaddstr(1, 4, " -a [user_name]");
 	attroff(COLOR_PAIR(8));
 	mvaddstr(2, 8, " to add a password item into user's codebook");
 
 	attron(COLOR_PAIR(8));
-	mvaddstr(3, 4, " -c user_name");
+	mvaddstr(3, 4, " -c [new_user_name]");
 	attroff(COLOR_PAIR(8));
 	mvaddstr(4, 8, " to create a user in user pool");
 
 	attron(COLOR_PAIR(8));
-	mvaddstr(5, 4, " -d user_name");
+	mvaddstr(5, 4, " -d [user_name]");
 	attroff(COLOR_PAIR(8));
 	mvaddstr(6, 8, " to delete a user from user pool");
 
 	attron(COLOR_PAIR(8));
-	mvaddstr(7, 4, " -g user_name");
+	mvaddstr(7, 4, " -g");
 	attroff(COLOR_PAIR(8));
 	mvaddstr(8, 8, " to switch into text GUI mode to browse user's codebook");
 
 	attron(COLOR_PAIR(8));
-	mvaddstr(9, 4, " -i user_name");
+	mvaddstr(9, 4, " -i [user_name]");
 	attroff(COLOR_PAIR(8));
 	mvaddstr(10, 8, " to modify user's information");
 
 	attron(COLOR_PAIR(8));
-	mvaddstr(11, 4, " -m user_name");
+	mvaddstr(11, 4, " -m [user_name]");
 	attroff(COLOR_PAIR(8));
 	mvaddstr(12, 8, " to modify information of password item from user's codebook");
 
 	attron(COLOR_PAIR(8));
-	mvaddstr(13, 4, " -r user_name");
+	mvaddstr(13, 4, " -r [user_name]");
 	attroff(COLOR_PAIR(8));
 	mvaddstr(14, 8, " to remove an password item from user's codebook");
 
