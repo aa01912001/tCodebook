@@ -4,7 +4,7 @@ A text-based codebook tool on linux
 ![image](https://user-images.githubusercontent.com/35134755/167286193-c8cca7db-8975-494c-bd1c-7277c01f6c6a.png)
 
 ## Abstract
-tCodebook can helps those who work under CLI environment create their codebook and provide text-based management GUI.
+tCodebook can help those who work under CLI environment create their codebook and provide text-based management GUI.
 In tCodebook, CRUD operation is allowed on your own codebook whenever you want. We also provide simple information statistics
 to show which password is the most and least frequently used in all of your passwords. Moreover, the strongess will be
 calculated on each of your password by our default rules, so you can clearly see how safe your password is and make a decision 
